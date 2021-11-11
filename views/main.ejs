@@ -1,0 +1,10 @@
+<h1>This is main</h1>
+<% if(locals.user) {%>
+    <h3>Hi <%=locals.user.name%> Welcome To The Green World</h3>
+<a href="users/logout">Logout</a>
+ <%} else {%>
+
+    <a href="users/signup">Sign Up</a><br>
+    <a href="users/signin">Sign In</a><br>
+
+    <%}%>
